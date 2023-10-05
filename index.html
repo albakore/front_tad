@@ -1,0 +1,1573 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- importado de TAD hml -->
+    <title>Mis Trámites - Trámites a Distancia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="------------">
+    <meta name="author" content="NIC Argentina">
+    <!--<base href="/">-->
+    <base href="./">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/poncho.css">
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/back-to-top.css">
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/styles.css">
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/uploadDropzone.css">
+    <link rel="shortcut icon" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/favicon.ico">
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/toaster.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/css/tablas-responsivas.css">
+    <!--<![endif]-->
+  
+    <style type="text/css">
+      /* You can add global styles to this file, and also import other style files */
+    </style>
+    <style></style>
+    <style>
+      [_nghost-nwo-11] ng-select > div {
+        border: 0;
+      }
+  
+      [_nghost-nwo-11] ng-select > div > div.single > div.placeholder {
+        font-family: "Nunito";
+        color: #000;
+      }
+  
+      [_nghost-nwo-11] ng-select > div > div.single > div.toggle {
+        color: #38485c;
+      }
+  
+      .apoderamientoSeleccionado[_ngcontent-nwo-11] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: auto;
+      }
+  
+      .descripcion-apoderado[_ngcontent-nwo-11] {
+        margin: 3px 0 0 0;
+        width: auto;
+      }
+  
+      .ng-select-apoderamiento[_ngcontent-nwo-11] {
+        width: auto;
+      }
+  
+      @media (max-width: 767px) {
+        .navbar-default[_ngcontent-nwo-11]
+          .nav[_ngcontent-nwo-11]
+          > li[_ngcontent-nwo-11]:last-of-type
+          > a[_ngcontent-nwo-11] {
+          padding: 10px;
+        }
+        #apoderamientoSelect[_ngcontent-nwo-11] {
+          max-width: 280px;
+          margin-top: 10px;
+        }
+      }
+  
+      .titleGobierno[_ngcontent-nwo-11] {
+        font-size: 14px;
+      }
+  
+      .logoGobierno[_ngcontent-nwo-11] {
+        position: absolute;
+      }
+  
+      .headerHide[_ngcontent-nwo-11] {
+        display: none;
+      }
+  
+      .headerDisabled[_ngcontent-nwo-11] {
+        cursor: not-allowed;
+        pointer-events: none;
+        color: grey;
+      }
+  
+      @media (min-width: 768px) {
+        .badge[_ngcontent-nwo-11] {
+          right: -1px;
+          top: 15px;
+        }
+      }
+  
+      @media (min-width: 980px) and (max-width: 991px) {
+        .navbar-brand[_ngcontent-nwo-11] h1[_ngcontent-nwo-11] {
+          font-size: 18px;
+        }
+      }
+  
+      @media (min-width: 768px) and (max-width: 850px) {
+        .navbar-header[_ngcontent-nwo-11] {
+          float: none;
+        }
+  
+        .navbar-left[_ngcontent-nwo-11],
+        .navbar-right[_ngcontent-nwo-11] {
+          float: none !important;
+        }
+  
+        .navbar-toggle[_ngcontent-nwo-11] {
+          display: block;
+          position: relative;
+          float: left;
+          margin-right: 14px;
+        }
+  
+        .navbar-collapse[_ngcontent-nwo-11] {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+  
+        .navbar-fixed-top[_ngcontent-nwo-11] {
+          top: 0;
+          border-width: 0 0 1px;
+        }
+  
+        .navbar-collapse.collapse[_ngcontent-nwo-11] {
+          display: none !important;
+        }
+  
+        .navbar-nav[_ngcontent-nwo-11] {
+          float: none !important;
+          margin-top: 7.5px;
+        }
+  
+        .navbar-nav[_ngcontent-nwo-11] > li[_ngcontent-nwo-11] {
+          float: none;
+        }
+  
+        .navbar-nav[_ngcontent-nwo-11]
+          > li[_ngcontent-nwo-11]
+          > a[_ngcontent-nwo-11] {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+  
+        .collapse.in[_ngcontent-nwo-11] {
+          display: block !important;
+        }
+  
+        .navbar-brand[_ngcontent-nwo-11] h1[_ngcontent-nwo-11] {
+          font-size: 18px;
+        }
+      }
+  
+      @media only screen and (min-width: 850px) {
+        nav[_ngcontent-nwo-11] .container[_ngcontent-nwo-11] {
+          min-width: 833px;
+        }
+      }
+  
+      @media (max-width: 320px) {
+        .navbar-brand[_ngcontent-nwo-11] br[_ngcontent-nwo-11] {
+          display: block;
+        }
+  
+        nav[_ngcontent-nwo-11] .container[_ngcontent-nwo-11] {
+          padding: 1px;
+        }
+  
+        .navbar-brand[_ngcontent-nwo-11] h1[_ngcontent-nwo-11] {
+          margin-top: 1px;
+        }
+  
+        .navbar-toggle[_ngcontent-nwo-11] {
+          margin-left: 2px;
+          margin-top: 12px;
+        }
+  
+        #apoderamientoSelect[_ngcontent-nwo-11] {
+          padding: 0px;
+          max-width: 250px;
+        }
+      }
+  
+      .jumbotron_bar[_ngcontent-nwo-11]
+        .form-group[_ngcontent-nwo-11]
+        .divPoderdantes[_ngcontent-nwo-11] {
+        font-family: Open Sans;
+        margin: 0;
+        padding: 6px 10px;
+        border: #e6ebf0 solid 2px;
+        border-radius: 6px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: -moz-max-content;
+        width: max-content;
+      }
+  
+      .nom-logueado[_ngcontent-nwo-11]
+        #usuarioHoverId[_ngcontent-nwo-11]:hover {
+        color: #38485c;
+      }
+  
+      .descripcion-usuario[_ngcontent-nwo-11] {
+        display: initial;
+        margin-right: 5px;
+      }
+  
+      .usuarioHover[_ngcontent-nwo-11]:hover {
+        color: #ffdb2e;
+      }
+    </style>
+    <style>
+      .loading[_ngcontent-nwo-28] {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        opacity: 0.7;
+  
+        -moz-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+        -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+  
+        background-color: #fff;
+        z-index: 99;
+        text-align: center;
+      }
+      .loading-text[_ngcontent-nwo-28] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+  
+      .spinner-wrap[_ngcontent-nwo-28] {
+        width: 4rem;
+        margin-bottom: 10px;
+      }
+  
+      .spinner-block[_ngcontent-nwo-28] {
+        border-width: 0.25rem;
+        height: inherit;
+        width: 100%;
+        aspect-ratio: 1/1;
+      }
+  
+      .spinner-block[_ngcontent-nwo-28],
+      .spinner-border[_ngcontent-nwo-28] {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        vertical-align: text-bottom;
+        border: 0.25rem solid #007bc7;
+        border-right: 0.25rem solid #e6ebf0;
+        border-radius: 50%;
+        animation: spinner-border 0.75s linear infinite;
+      }
+  
+      @keyframes spinner-border {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <style>
+      .centrarFooterConTadPublico[_ngcontent-nwo-12] {
+        padding-left: 14% !important;
+      }
+  
+      .logoCiudadFooter[_ngcontent-nwo-12] {
+        cursor: pointer;
+        width: auto;
+      }
+  
+      #version[_ngcontent-nwo-12] {
+        color: rgb(251, 247, 247);
+        text-align: center;
+  
+        transition: opacity 0.4s linear;
+        cursor: pointer;
+  
+        top: 60%;
+        right: 0;
+        bottom: 0;
+  
+        border-radius: 5px;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 5px;
+        font-style: italic;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 15px;
+        height: 70%;
+        width: 100%;
+  
+        margin: 0 0 0 1.1%;
+      }
+  
+      .logoCiudadFooter[_ngcontent-nwo-12]:hover #version[_ngcontent-nwo-12] {
+        display: -ms-flexbox;
+        display: flex;
+        opacity: 0.75;
+      }
+  
+      #version[_ngcontent-nwo-12] div[_ngcontent-nwo-12] {
+        float: left;
+      }
+  
+      .redes[_ngcontent-nwo-12] {
+        color: white;
+        font-size: 12px;
+      }
+  
+      .redes[_ngcontent-nwo-12] ul[_ngcontent-nwo-12] {
+        margin-bottom: 15px;
+      }
+  
+      .separacion[_ngcontent-nwo-12] {
+        border-top: 1px solid white;
+        padding-top: 15px;
+      }
+  
+      #logoCiudadFooter1[_ngcontent-nwo-12]
+        > img.para-desktop[_ngcontent-nwo-12] {
+        height: 50px;
+        margin: 0;
+      }
+  
+      #logoCiudadFooter2[_ngcontent-nwo-12]
+        > img.para-desktop[_ngcontent-nwo-12] {
+        margin-top: 7px;
+      }
+  
+      .ayudas[_ngcontent-nwo-12] {
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        margin: 17px 0 0 -4px;
+      }
+  
+      .ayudas[_ngcontent-nwo-12] > ul[_ngcontent-nwo-12] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+      }
+  
+      .ayudas[_ngcontent-nwo-12]
+        > ul[_ngcontent-nwo-12]
+        > li[_ngcontent-nwo-12]
+        > a[_ngcontent-nwo-12] {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        text-decoration: underline;
+      }
+  
+      .img-logo-footer[_ngcontent-nwo-12] {
+        margin-top: 7px;
+      }
+  
+      #logoCiudadFooter1[_ngcontent-nwo-12] {
+        height: auto;
+        width: auto;
+        margin: 0;
+        float: left;
+      }
+  
+      @media screen and (min-width: 768px) {
+        #logoCiudadFooter2[_ngcontent-nwo-12] img[_ngcontent-nwo-12] {
+          margin-bottom: 0px;
+        }
+        #version[_ngcontent-nwo-12] {
+          min-width: 500px;
+          text-align: initial;
+        }
+      }
+  
+      @media screen and (max-width: 767px) {
+        #logoCiudadFooter1[_ngcontent-nwo-12] {
+          max-width: 200px;
+        }
+        div.ayudas.redes[_ngcontent-nwo-12] {
+          max-width: 190px;
+          float: right;
+        }
+  
+        div.ayudas.redes[_ngcontent-nwo-12]
+          ul[_ngcontent-nwo-12]
+          li[_ngcontent-nwo-12] {
+          display: inline-block;
+          min-width: 50px;
+        }
+  
+        #version[_ngcontent-nwo-12] {
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding: 0px;
+        }
+  
+        img-logo-footer-mobile[_ngcontent-nwo-12] {
+          margin-top: 7px;
+        }
+      }
+  
+      @media screen and (max-width: 447px) {
+        div.ayudas.redes[_ngcontent-nwo-12] {
+          max-width: 100%;
+        }
+        #logoCiudadFooter1[_ngcontent-nwo-12] {
+          max-width: 100%;
+        }
+        #logoCiudadFooter1[_ngcontent-nwo-12]
+          img.para-mobile[_ngcontent-nwo-12] {
+          margin-left: 20px;
+        }
+      }
+  
+      @media screen and (max-width: 467px) {
+        #version[_ngcontent-nwo-12] {
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        .logoCiudadFooter[_ngcontent-nwo-12]:hover #version[_ngcontent-nwo-12] {
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        #separacion[_ngcontent-nwo-12] {
+          display: none;
+        }
+        .container.all-footer[_ngcontent-nwo-12] {
+          margin: 0px 5px;
+        }
+      }
+    </style>
+    <style>
+      .empty-blank-container[_ngcontent-nwo-106] {
+        display: none;
+      }
+  
+      #tramites[_ngcontent-nwo-106]
+        header[_ngcontent-nwo-106]
+        .icon-toolbar[_ngcontent-nwo-106] {
+        width: 26px;
+        height: auto;
+        display: inline-block;
+        margin-left: 0.55rem;
+      }
+      #ellipsisActions[_ngcontent-nwo-106]
+        ol[_ngcontent-nwo-106]
+        .icon-toolbar[_ngcontent-nwo-106]
+        .icon-img[_ngcontent-nwo-106] {
+        width: 30px;
+        margin-right: 10px;
+        vertical-align: initial;
+      }
+      #list[_ngcontent-nwo-106]
+        .name[_ngcontent-nwo-106]
+        .explorador[_ngcontent-nwo-106] {
+        width: 100%;
+      }
+      #list[_ngcontent-nwo-106] .inputRenameFolder[_ngcontent-nwo-106] {
+        width: 90%;
+      }
+      #maincontent[_ngcontent-nwo-106] .input-group[_ngcontent-nwo-106] {
+        float: left;
+      }
+      .input-group[_ngcontent-nwo-106] .form-control[_ngcontent-nwo-106] {
+        z-index: auto;
+      }
+      .firmaDigital[_ngcontent-nwo-106] {
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 999;
+        top: 0;
+        position: fixed;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+  
+      .modal-dialog-sign[_ngcontent-nwo-106] {
+        width: 50%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background-color: white;
+        height: auto;
+      }
+      .marglef[_ngcontent-nwo-106] {
+        margin-left: 5px;
+        text-align: left;
+      }
+      .btn-success[_ngcontent-nwo-106] {
+        background-color: #26874a !important;
+      }
+     .btn-default[_ngcontent-nwo-106] {
+        background-color: #5c6a7a !important;
+      }
+  
+      .modale-content-sign[_ngcontent-nwo-106] {
+        width: 100%;
+      }
+      .topsign[_ngcontent-nwo-106] {
+        width: 100%;
+        background-color: #ffdb2e;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+      .button-wrapper[_ngcontent-nwo-106] {
+        display: -ms-flexbox;
+        display: flex;
+        height: 150px;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+      }
+  
+      .topsign[_ngcontent-nwo-106] h4[_ngcontent-nwo-106] {
+        width: 100%;
+      }
+  
+      #maincontent[_ngcontent-nwo-106]
+        .input-group[_ngcontent-nwo-106]
+        .btn-primary[_ngcontent-nwo-106] {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+      .get-pendientes[_ngcontent-nwo-106] {
+        position: relative;
+        display: inline-block !important;
+      }
+      .get-pendientes[_ngcontent-nwo-106] .badge[_ngcontent-nwo-106] {
+        top: 0.2em;
+        right: -15px;
+      }
+      .breadcrumbs[_ngcontent-nwo-106]
+        > .explorador-seleccionado[_ngcontent-nwo-106] {
+        color: rgba(0, 0, 0, 0.54);
+      }
+      .crumb-item[_ngcontent-nwo-106]:last-child
+        .crumb-name[_ngcontent-nwo-106] {
+        color: rgba(0, 0, 0, 0.87);
+      }
+      .crumb-item[_ngcontent-nwo-106] .crumb_name_tail[_ngcontent-nwo-106] {
+        color: rgba(0, 0, 0, 0.87);
+      }
+      .crumb-item[_ngcontent-nwo-106]
+        .glyphicon-chevron-right[_ngcontent-nwo-106] {
+        color: rgba(0, 0, 0, 0.54);
+      }
+      .icon-short-wrap[_ngcontent-nwo-106] {
+        width: 20px !important;
+      }
+      #actions[_ngcontent-nwo-106] .fa-trash[_ngcontent-nwo-106],
+      #actions[_ngcontent-nwo-106] .fa-list-alt[_ngcontent-nwo-106],
+      #actions[_ngcontent-nwo-106] .fa-user-plus[_ngcontent-nwo-106],
+      #actions[_ngcontent-nwo-106] .fa-download[_ngcontent-nwo-106] {
+        vertical-align: sub;
+        position: relative;
+      }
+      .pad-acciones[_ngcontent-nwo-106] .fa-list-alt[_ngcontent-nwo-106],
+      .pad-acciones[_ngcontent-nwo-106] .fa-user-plus[_ngcontent-nwo-106],
+      .pad-acciones[_ngcontent-nwo-106] .fa-download[_ngcontent-nwo-106] {
+        bottom: 0 !important;
+      }
+  
+      .ellipsisActions[_ngcontent-nwo-106] .fa-list-alt[_ngcontent-nwo-106] {
+        bottom: -1px !important;
+        left: 0px !important;
+      }
+      .pad-acciones[_ngcontent-nwo-106],
+      .pad-buscador[_ngcontent-nwo-106] {
+        z-index: 1;
+      }
+      .pad-acciones[_ngcontent-nwo-106] .fa-list-alt[_ngcontent-nwo-106] {
+        bottom: -3px !important;
+      }
+      .ellipsisActions[_ngcontent-nwo-106]
+        .fa.fa-list-ul[_ngcontent-nwo-106]:before {
+        font-size: 1.1em;
+      }
+      .ellipsisActions[_ngcontent-nwo-106]
+        .fa.fa-list-ul[_ngcontent-nwo-106]:after {
+        bottom: -2px;
+      }
+      #tramites[_ngcontent-nwo-106]
+        #maincontent[_ngcontent-nwo-106]
+        #list[_ngcontent-nwo-106]
+        ol.ellipsisActionsOptions[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        .icon-img.icon-tasks[_ngcontent-nwo-106] {
+        width: 19px !important;
+        left: 2px;
+        position: relative;
+        margin-right: 4px;
+      }
+  
+      .pad-acciones[_ngcontent-nwo-106] .icon-tasks[_ngcontent-nwo-106] {
+        bottom: -3px;
+      }
+      #actions[_ngcontent-nwo-106] .fa-trash[_ngcontent-nwo-106],
+      #actions[_ngcontent-nwo-106] .fa-list-alt[_ngcontent-nwo-106],
+      #actions[_ngcontent-nwo-106] .fa-tasks[_ngcontent-nwo-106] {
+        bottom: -2px;
+        left: 3px;
+      }
+      #actions[_ngcontent-nwo-106] .fa-pencil[_ngcontent-nwo-106] {
+        margin-left: 0.2em;
+      }
+      #actions[_ngcontent-nwo-106] .fa-file-text-o[_ngcontent-nwo-106] {
+        font-size: 1.65em;
+      }
+      #actions[_ngcontent-nwo-106] .fa-usd[_ngcontent-nwo-106] {
+        padding-left: 0.3em;
+      }
+      #options[_ngcontent-nwo-106] .fa[_ngcontent-nwo-106] {
+        margin-left: 2px;
+        margin-right: -3px !important;
+      }
+      #options[_ngcontent-nwo-106] .fa-trash[_ngcontent-nwo-106] {
+        font-size: 1.6em !important;
+        left: 0px;
+      }
+      #options[_ngcontent-nwo-106] .fa-user-plus[_ngcontent-nwo-106] {
+        font-size: 1.4em !important;
+        bottom: 0px !important;
+      }
+      #options[_ngcontent-nwo-106] .fa-tasks[_ngcontent-nwo-106] {
+        top: 4px;
+      }
+  
+      .task-pad[_ngcontent-nwo-106] {
+        top: -1px !important;
+      }
+  
+      .icon-toolbar-eye[_ngcontent-nwo-106] {
+        position: relative;
+        bottom: -1px;
+      }
+  
+      [_nghost-nwo-106]
+        app-firma-conjunta-detalle
+        #firmaConjuntaDetalle
+        h5.modal-title {
+        font-size: 22px;
+      }
+      [_nghost-nwo-106] app-firma-conjunta #firmaConjunta h5.modal-title {
+        font-size: 22px;
+      }
+  
+      [_nghost-nwo-106]
+        app-form-redireccion.ellipsisItem-redireccion
+        .fa.fa-edit {
+        margin-left: 2px;
+        margin-right: -3px !important;
+      }
+      [_nghost-nwo-106]
+        app-form-redireccion.ellipsisItem-redireccion
+        .fa.fa-edit:after {
+        content: "GP";
+        font-size: 15px;
+        font-family: Nunito;
+        position: relative;
+        top: -2px;
+        left: 5px;
+      }
+      [_nghost-nwo-106]
+        app-form-redireccion.ellipsisItem-redireccion
+        .fa.fa-list-alt:after {
+        content: "Continuar";
+        font-size: 15px;
+        font-family: Nunito;
+        position: relative;
+        top: -2px;
+        left: 5px;
+      }
+      [_nghost-nwo-106]
+        app-form-redireccion.ellipsisItem-redireccion
+        > .form-horizontal,
+      [_nghost-nwo-106]
+        app-form-redireccion.pad-acciones-redireccion
+        > .form-horizontal {
+        margin-bottom: 0;
+      }
+      [_nghost-nwo-106]
+        app-form-redireccion.pad-acciones-redireccion
+        .btn-continuar {
+        margin-left: 55% !important;
+        top: 3px !important;
+      }
+  
+      [_nghost-nwo-106]
+        app-form-redireccion.pad-acciones-redireccion
+        [type="submit"] {
+        margin-left: 0.8em;
+        top: 2px;
+        position: relative;
+      }
+      [_nghost-nwo-106]
+        app-form-redireccion.pad-acciones-redireccion
+        [type="submit"],
+      [_nghost-nwo-106]
+        app-form-redireccion.ellipsisItem-redireccion
+        [type="submit"] {
+        outline-width: 0;
+      }
+  
+      .isDropUp[_ngcontent-nwo-106]
+        .ellipsisActionsOptions[_ngcontent-nwo-106] {
+        top: auto !important;
+        bottom: 100%;
+        margin-bottom: 1px !important;
+      }
+      .icon-tasks[_ngcontent-nwo-106] {
+        width: 19px;
+        height: 19px;
+      }
+  
+      #confirmarCancelarTarea[_ngcontent-nwo-106] a[_ngcontent-nwo-106] {
+        color: #38485c !important;
+      }
+  
+      #maincontent[_ngcontent-nwo-106]
+        .icon-toolbar[_ngcontent-nwo-106]
+        .fa.fa-list-ul[_ngcontent-nwo-106] {
+        bottom: -1px !important;
+        position: relative;
+      }
+      .fa.fa-list-ul[_ngcontent-nwo-106]:after {
+        content: "\f06e";
+      }
+      .fa.fa-list-ul[_ngcontent-nwo-106]:after {
+        content: "\f06e";
+        text-shadow: -2px -2px 0px #fff;
+        margin-left: -10px;
+        font-size: 0.85em;
+        font-weight: 600;
+        position: absolute;
+        bottom: -4px;
+      }
+  
+      .fa.fa-list-ul[_ngcontent-nwo-106]:before {
+        top: 2px;
+        position: relative;
+      }
+  
+      #tramites[_ngcontent-nwo-106]
+        header[_ngcontent-nwo-106]
+        .icon-toolbar[_ngcontent-nwo-106] {
+        margin-left: 0.8em;
+        float: left;
+      }
+  
+      #tramites[_ngcontent-nwo-106]
+        header[_ngcontent-nwo-106]
+        #actions[_ngcontent-nwo-106]
+        i[_ngcontent-nwo-106] {
+        font-size: 1.8rem;
+        position: relative;
+      }
+      .col-md-12.share-container[_ngcontent-nwo-106] {
+        line-height: 100%;
+      }
+      .share-container[_ngcontent-nwo-106]
+        .share-items-cnt[_ngcontent-nwo-106] {
+        overflow-y: scroll;
+        height: 100%;
+        width: 100%;
+      }
+  
+      .w3-sidebar.info-sidebar[_ngcontent-nwo-106]
+        p[_ngcontent-nwo-106]
+        span.tt-type[_ngcontent-nwo-106] {
+        font-weight: inherit;
+      }
+  
+      .createFolderCtn[_ngcontent-nwo-106] input[_ngcontent-nwo-106] {
+        position: relative;
+        top: -2px;
+      }
+      .span-aviso-visualizacion[_ngcontent-nwo-106] {
+        margin: 1.2em;
+        font-size: 0.8em;
+      }
+  
+      @media screen and (max-width: 767px) {
+        .w3-sidebar.info-sidebar[_ngcontent-nwo-106] {
+          width: 60%;
+          height: 75%;
+          position: relative;
+        }
+      }
+  
+      ul#head[_ngcontent-nwo-106],
+      ul#list[_ngcontent-nwo-106] {
+        min-width: 1024px;
+      }
+      .spinner[_ngcontent-nwo-106] {
+        border: 4px solid rgb(14 20 159 / 81%);
+        border-left-color: transparent;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+  
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+  
+      .table-responsive[_ngcontent-nwo-106] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        overflow-x: visible;
+      }
+      .table[_ngcontent-nwo-106] {
+        border-radius: 0.5rem;
+        border-collapse: initial;
+        border-spacing: 0;
+      }
+  
+      .table[_ngcontent-nwo-106] thead[_ngcontent-nwo-106] {
+        background: #ffdb2e;
+        color: #38485c;
+      }
+  
+      .table.bordered[_ngcontent-nwo-106],
+      table[_ngcontent-nwo-106] th[_ngcontent-nwo-106] {
+        border: 1px solid #ddd;
+      }
+  
+      th[_ngcontent-nwo-106],
+      td[_ngcontent-nwo-106] {
+        padding: 12px 20px;
+      }
+      .table[_ngcontent-nwo-106]
+        thead[_ngcontent-nwo-106]
+        th[_ngcontent-nwo-106]:first-of-type {
+        border-top-left-radius: calc(0.5rem - 1px);
+      }
+  
+      .table[_ngcontent-nwo-106]
+        thead[_ngcontent-nwo-106]
+        th[_ngcontent-nwo-106]:last-of-type {
+        border-top-right-radius: calc(0.5rem - 1px);
+      }
+  
+      .table[_ngcontent-nwo-106]
+        tbody[_ngcontent-nwo-106]
+        tr[_ngcontent-nwo-106]:last-of-type
+        td[_ngcontent-nwo-106]:first-of-type {
+        border-bottom-left-radius: calc(0.5rem - 1px);
+      }
+  
+      .table[_ngcontent-nwo-106]
+        tbody[_ngcontent-nwo-106]
+        tr[_ngcontent-nwo-106]:last-of-type
+        td[_ngcontent-nwo-106]:last-of-type {
+        border-bottom-right-radius: calc(0.5rem - 1px);
+      }
+  
+      .table[_ngcontent-nwo-106]
+        tbody[_ngcontent-nwo-106]
+        tr[_ngcontent-nwo-106]
+        a.explorador[_ngcontent-nwo-106]:hover {
+        font-weight: bold;
+        color: black;
+      }
+  
+      .table[_ngcontent-nwo-106]
+        tbody[_ngcontent-nwo-106]
+        tr[_ngcontent-nwo-106]:hover {
+        background-color: #fafa9e;
+      }
+      #tramites[_ngcontent-nwo-106]
+        .table-responsive[_ngcontent-nwo-106]
+        #ellipsisActions[_ngcontent-nwo-106]
+        ol[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        a[_ngcontent-nwo-106] {
+        white-space: nowrap;
+        padding: 0.5rem;
+      }
+  
+      td#actions[_ngcontent-nwo-106]
+        ul[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        ol[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        a[_ngcontent-nwo-106]
+        i[_ngcontent-nwo-106] {
+        font-size: 1.3rem;
+        padding-right: 0.5rem;
+      }
+      td#actions[_ngcontent-nwo-106]
+        ul[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        ol[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        a[_ngcontent-nwo-106] {
+        font-size: 1rem;
+      }
+  
+      td#actions[_ngcontent-nwo-106]
+        .ellipsisActions[_ngcontent-nwo-106]
+        .ellipsisActionsOptions[_ngcontent-nwo-106]
+        .label-action[_ngcontent-nwo-106] {
+        top: -1px;
+      }
+      td#actions[_ngcontent-nwo-106]
+        .ellipsisActions[_ngcontent-nwo-106]
+        .ellipsisActionsOptions[_ngcontent-nwo-106]
+        li.accionItemActive[_ngcontent-nwo-106] {
+        width: 100%;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+  
+      td#actions[_ngcontent-nwo-106]
+        ul[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        ol[_ngcontent-nwo-106]
+        li[_ngcontent-nwo-106]
+        app-form-redireccion {
+        font-size: 1.3rem;
+        -ms-flex: 1;
+        flex: 1;
+      }
+  
+      .w3-sidebar.info-sidebar[_ngcontent-nwo-106] {
+        height: auto;
+        padding-bottom: 1.5rem;
+        position: absolute !important;
+      }
+  
+      #tramites[_ngcontent-nwo-106] tr.selecteditems[_ngcontent-nwo-106] {
+        background-color: #fafa9e;
+        color: black !important;
+      }
+      #tramites[_ngcontent-nwo-106]
+        tr.explorador-seleccionado.selecteditems[_ngcontent-nwo-106]
+        i[_ngcontent-nwo-106] {
+        background-color: transparent;
+        color: #868686 !important;
+      }
+  
+      #tramites[_ngcontent-nwo-106]
+        #ellipsisActions[_ngcontent-nwo-106]
+        ol[_ngcontent-nwo-106] {
+        min-width: 10rem;
+      }
+  
+      @media screen and (max-width: 767px) {
+        .table-responsive[_ngcontent-nwo-106] {
+          border: none;
+          overflow-y: auto;
+        }
+      }
+  
+      @media screen and (max-width: 992px) {
+        #tramites[_ngcontent-nwo-106] #maincontent[_ngcontent-nwo-106] {
+          margin-left: 0px;
+        }
+      }
+      @media (max-width: 900px) {
+        .modal-dialog-sign[_ngcontent-nwo-106] {
+          width: 70%;
+        }
+      }
+  
+      @media screen and (max-width: 718px) {
+        .table-responsive[_ngcontent-nwo-106] div[_ngcontent-nwo-106] {
+          -ms-flex: 1;
+          flex: 1;
+        }
+  
+        .table-responsive[_ngcontent-nwo-106] {
+          -ms-flex-pack: initial;
+          justify-content: initial;
+        }
+      }
+  
+      #modalSigesi.modal[_ngcontent-nwo-106] {
+        display: none;
+        position: fixed;
+        padding-top: 90px;
+        padding-bottom: 10px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      #modalSigesi[_ngcontent-nwo-106] .modal-content[_ngcontent-nwo-106] {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        max-width: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 0.5rem;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106] .modal[_ngcontent-nwo-106] {
+        display: none;
+        position: fixed;
+        padding-top: 90px;
+        padding-bottom: 10px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106]
+        .modal-content[_ngcontent-nwo-106] {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        max-width: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 0.5rem;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+      }
+      @keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      #modalSigesi[_ngcontent-nwo-106] .close[_ngcontent-nwo-106] {
+        color: white;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        opacity: 0.8;
+      }
+      #modalSigesi[_ngcontent-nwo-106] .close[_ngcontent-nwo-106]:hover,
+      #modalSigesi[_ngcontent-nwo-106] .close[_ngcontent-nwo-106]:focus {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 1;
+      }
+      #modalSigesi[_ngcontent-nwo-106] .modal-header[_ngcontent-nwo-106] {
+        padding: 2px 16px;
+        background-color: #5c5c5c;
+        color: white;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+      #modalSigesi[_ngcontent-nwo-106] .modal-body[_ngcontent-nwo-106] {
+        padding: 2px 16px;
+      }
+      #modalSigesi[_ngcontent-nwo-106] .modal-footer[_ngcontent-nwo-106] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 2px 16px;
+      }
+      #modalSigesi[_ngcontent-nwo-106]
+        .modal-footer[_ngcontent-nwo-106]
+        .btn[_ngcontent-nwo-106]
+        + .btn[_ngcontent-nwo-106] {
+        margin-bottom: auto;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106] .close[_ngcontent-nwo-106] {
+        color: white;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        opacity: 0.8;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106] .close[_ngcontent-nwo-106]:hover,
+      #modalFirmaDigital[_ngcontent-nwo-106] .close[_ngcontent-nwo-106]:focus {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 1;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106] .modal-header[_ngcontent-nwo-106] {
+        padding: 2px 16px;
+        background-color: #5c5c5c;
+        color: white;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106] .modal-body[_ngcontent-nwo-106] {
+        padding: 2px 16px;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106] .modal-footer[_ngcontent-nwo-106] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 2px 16px;
+      }
+      #modalFirmaDigital[_ngcontent-nwo-106]
+        .modal-footer[_ngcontent-nwo-106]
+        .btn[_ngcontent-nwo-106]
+        + .btn[_ngcontent-nwo-106] {
+        margin-bottom: auto;
+      }
+      @media screen and (max-width: 670px) {
+        .button-wrapper[_ngcontent-nwo-106] {
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        #modalSigesi[_ngcontent-nwo-106] .modal-content[_ngcontent-nwo-106] {
+          min-width: auto;
+        }
+        #modalFirmaDigital[_ngcontent-nwo-106]
+          .modal-content[_ngcontent-nwo-106] {
+          min-width: auto;
+        }
+        .modal-dialog-sign[_ngcontent-nwo-106] {
+          width: 90%;
+        }
+      }
+      #tramites[_ngcontent-nwo-106]
+        .explorador-seleccionado[_ngcontent-nwo-106]
+        a[_ngcontent-nwo-106]:hover {
+        color: black;
+      }
+  
+      #modal-body[_ngcontent-nwo-106] {
+        border-top: 1px solid #dddbdb !important;
+      }
+  
+      .mensajeError[_ngcontent-nwo-106] {
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+        color: #000;
+      }
+  
+      #errorBuzon[_ngcontent-nwo-106] .modal-body[_ngcontent-nwo-106] {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+  
+      #modal-header[_ngcontent-nwo-106] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 1px solid #e9ecef;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+      }
+  
+      #errorBuzon[_ngcontent-nwo-106] {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        overflow: hidden;
+        outline: 0;
+      }
+  
+      #modal-footer[_ngcontent-nwo-106] button.btn[_ngcontent-nwo-106] {
+        display: inline-block;
+        background-color: #5c6a7a;
+        color: #fff;
+      }
+  
+      #conceptosPago[_ngcontent-nwo-106] {
+        height: 400px;
+        overflow-y: auto;
+      }
+    </style>
+    <style>
+      .row-margin[_ngcontent-nwo-7] {
+        margin-top: 0.3rem;
+      }
+  
+      .label-collapse-expand[_ngcontent-nwo-7] {
+        margin: 0;
+        padding: 0 0.3rem;
+        cursor: pointer;
+      }
+      .divider[_ngcontent-nwo-7] {
+        height: 1px;
+        margin: 0.5rem 0;
+        overflow: hidden;
+        background: #000;
+      }
+      .treeview-container[_ngcontent-nwo-7] {
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-right: 18px;
+      }
+      .treeview-text[_ngcontent-nwo-7] {
+        padding: 0.3rem 0;
+        white-space: nowrap;
+      }
+    </style>
+    <style>
+      .show[_ngcontent-nwo-63] {
+        opacity: 1 !important;
+      }
+      .step[_ngcontent-nwo-63] {
+        opacity: 0;
+        transition: 0.5s ease-in-out all;
+      }
+    </style>
+    <style>
+      .td-center[_ngcontent-nwo-76] {
+        text-align: center;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+  
+      .modal-footer[_ngcontent-nwo-76] button.btn[_ngcontent-nwo-76] {
+        float: right;
+      }
+    </style>
+    <style>
+      .modal-body[_ngcontent-nwo-77] a[_ngcontent-nwo-77] {
+        color: #38485c;
+      }
+      .btn-primary[_ngcontent-nwo-77] {
+        margin: 8px 5px 8px 0px;
+      }
+      .btn-success[_ngcontent-nwo-77] {
+        margin: 8px 5px 8px 0px;
+      }
+      .modal-footer[_ngcontent-nwo-77]
+        .btn[_ngcontent-nwo-77]
+        + .btn[_ngcontent-nwo-77] {
+        margin-left: 0px !important;
+      }
+      .abs-center[_ngcontent-nwo-77] {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 10vh;
+        padding-bottom: 20px;
+      }
+    </style>
+    <style>
+      .ng2-pagination {
+        margin-left: 0;
+        margin-bottom: 1rem;
+      }
+      .ng2-pagination::before,
+      .ng2-pagination::after {
+        content: " ";
+        display: table;
+      }
+      .ng2-pagination::after {
+        clear: both;
+      }
+      .ng2-pagination li {
+        margin-right: 0.0625rem;
+        border-radius: 0;
+      }
+      .ng2-pagination li {
+        display: inline-block;
+      }
+      .ng2-pagination a,
+      .ng2-pagination button {
+        color: #0a0a0a;
+        display: block;
+        padding: 0.1875rem 0.625rem;
+        border-radius: 0;
+      }
+      .ng2-pagination a:hover,
+      .ng2-pagination button:hover {
+        background: #e6e6e6;
+      }
+      .ng2-pagination .current {
+        padding: 0.1875rem 0.625rem;
+        background: #2199e8;
+        color: #fefefe;
+        cursor: default;
+      }
+      .ng2-pagination .disabled {
+        padding: 0.1875rem 0.625rem;
+        color: #cacaca;
+        cursor: default;
+      }
+      .ng2-pagination .disabled:hover {
+        background: transparent;
+      }
+      .ng2-pagination .ellipsis::after {
+        content: "…";
+        padding: 0.1875rem 0.625rem;
+        color: #0a0a0a;
+      }
+  
+      .ng2-pagination .pagination-previous a::before,
+      .ng2-pagination .pagination-previous.disabled::before {
+        content: "«";
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+  
+      .ng2-pagination .pagination-next a::after,
+      .ng2-pagination .pagination-next.disabled::after {
+        content: "»";
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+  
+      .ng2-pagination .show-for-sr {
+        position: absolute !important;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+      }
+    </style>
+    <style>
+      [_nghost-nwo-193] app-form-redireccion .button-externo {
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    </style>
+    <style>
+      ng-select {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        vertical-align: middle;
+        width: 100%;
+      }
+      ng-select * {
+        box-sizing: border-box;
+        font-family: Sans-Serif;
+      }
+      ng-select > div {
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        cursor: pointer;
+        user-select: none;
+        width: 100%;
+      }
+      ng-select > div.disabled {
+        background-color: #eee;
+        color: #aaa;
+        cursor: default;
+        pointer-events: none;
+      }
+      ng-select > div > div.single {
+        display: flex;
+        height: 30px;
+        width: 100%;
+      }
+      ng-select > div > div.single > div.value,
+      ng-select > div > div.single > div.placeholder {
+        flex: 1;
+        line-height: 30px;
+        overflow: hidden;
+        padding: 0 10px;
+        white-space: nowrap;
+      }
+      ng-select > div > div.single > div.placeholder {
+        color: #a9a9a9;
+      }
+      ng-select > div > div.single > div.clear,
+      ng-select > div > div.single > div.toggle {
+        color: #aaa;
+        line-height: 30px;
+        text-align: center;
+        width: 30px;
+      }
+      ng-select > div > div.single > div.clear:hover,
+      ng-select > div > div.single > div.toggle:hover {
+        background-color: #ececec;
+      }
+      ng-select > div > div.single > div.clear {
+        font-size: 18px;
+      }
+      ng-select > div > div.single > div.toggle {
+        font-size: 14px;
+      }
+      ng-select > div > div.multiple {
+        display: flex;
+        flex-flow: row wrap;
+        height: 100%;
+        min-height: 30px;
+        padding: 0 10px;
+        width: 100%;
+      }
+      ng-select > div > div.multiple > div.option {
+        background-color: #eee;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        color: #333;
+        cursor: default;
+        display: inline-block;
+        flex-shrink: 0;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 3px 5px 3px 0;
+        padding: 0 4px;
+      }
+      ng-select > div > div.multiple > div.option span.deselect-option {
+        color: #aaa;
+        cursor: pointer;
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+      }
+      ng-select > div > div.multiple > div.option span.deselect-option:hover {
+        color: #555;
+      }
+      ng-select > div > div.multiple input {
+        background-color: transparent;
+        border: none;
+        height: 30px;
+        line-height: 30px;
+        padding: 0;
+      }
+      ng-select > div > div.multiple input:focus {
+        outline: none;
+      }
+    </style>
+    <style>
+      .inline[_ngcontent-nwo-4] {
+        display: inline-block !important;
+      }
+  
+      a.btn[_ngcontent-nwo-4] {
+        text-transform: none;
+        border-radius: 0.5rem;
+        font-size: 14px;
+      }
+  
+      a.btn-link[_ngcontent-nwo-4] {
+        background-color: #e4eaef;
+        color: #007bc7;
+      }
+  
+      button.btn[_ngcontent-nwo-4] {
+        text-transform: none;
+        border-radius: 0.5rem;
+        font-size: 14px;
+      }
+    </style>
+
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <!-- importado de TAD HML -->
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/forge.min.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/jquery.localScroll.js" type="text/javascript"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/jquery.scrollTo.js" type="text/javascript"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/back-to-top.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/loys.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/validaciones.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/utilidadesFormulario.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/utiles.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/firmaConToken.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/ol.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/encoder.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/infoVersion.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      </script>
+    <script src="./script.js"></script>
+    <script src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/js/responsive-tabs.js"></script>
+    <!-- importado de TAD HML -->
+    
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
