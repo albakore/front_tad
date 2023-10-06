@@ -1,5 +1,30 @@
-.main-footer{
+footer {
+    background-color: #333;
+    color: white;
+    position: relative;
     bottom: 0;
-    position: absolute !important;
-    width: 100% !important;
+    width: 100%;
+    padding: 20px;
 }
+
+.lis_col{
+    margin-top: 10px;
+    display: flex;
+    max-width: 600px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.lis_col a{
+    color: #ffff;
+}
+
+.version p{
+    font-size: 12px;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,5 +1,20 @@
 :root {
-  height: 100svh;
-  width: 100svw;
+  min-height: 100%;
+  width: 100vw;
 }
 
+body, html{
+  height: 100vh;
+}
+
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+}

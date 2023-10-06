@@ -4,41 +4,25 @@ import './style.css'
 export default function Footer() {
   return (
     <>
-      <footer className="main-footer" >
-        <div className="container all-footer" >
-          <div
-            className="col-xs-12 col-sm-4 institu logoCiudadFooter"
-            id="logoCiudadFooter2"
-          >
-            <img
-              alt="Trámites a Distancia - Presidencia de la Nación"
-              className="image-responsive para-mobile"
-              src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/logo-footer.png"
-            />
-            <img
-              alt="Trámites a Distancia - Presidencia de la Nación"
-              className="image-responsive para-desktop"
-              src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/logo-footer.png"
-            />
-          </div>
-          <div
-            className="col-12 col-md-5 col-xl-4 institu logoCiudadFooter"
-            id="logoCiudadFooter1"
-          >
-            <img
-              alt="Trámites a Distancia - Presidencia de la Nación"
-              className="image-responsive para-mobile"
-              src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/logo-ba-blanco-footer.png"
-            />
-            <img
-              alt="Trámites a Distancia - Presidencia de la Nación"
-              className="image-responsive para-desktop img-footer"
-              src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/logo-ba-blanco-footer.png"
-            />
+      <footer className="" >
+        <div className="d-flex flex-column container">
+
+          <div className="images_row col-md-7">
+              <img
+                alt="Trámites a Distancia - Presidencia de la Nación"
+                className="image-responsive para-desktop "
+                src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/logo-footer.png"
+              />
+              <img
+                style={{width:'150px',height:'50px', marginLeft:'20px'}}
+                alt="Trámites a Distancia - Presidencia de la Nación"
+                className="image-responsive para-desktop img-footer"
+                src="https://sade-tad3-hml.gcba.gob.ar/tramitesadistancia/images/logo-ba-blanco-footer.png"
+              />
           </div>
 
-          <div className="col-xs-12 col-sm-8 ayudas">
-            <ul>
+          <div className="p-2" >
+            <ul  className="lis_col col-md-12">
               <li>
                 <a>Preguntas Frecuentes</a>
               </li>
@@ -59,15 +43,16 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div id="version" style={{height: 'fit-content'}}>
-            <div id="infoVersionBack" style={{height: 'fit-content'}}>
+          
+          <div className="version" id="version">
+            <p id="infoVersionBack" >
               Version BACK: 1.21.22-RC2-GCABA
-            </div>
-            <div id="separacion" style={{height: 'fit-content'}}></div>
-            <div id="infoVersionFront" style={{height: 'fit-content'}}>
+            </p>
+            <p id="infoVersionFront" >
               Version FRONT: 1.21.19-RC2-GCABA
-            </div>
+            </p>
           </div>
+
         </div>
       </footer>
     </>
