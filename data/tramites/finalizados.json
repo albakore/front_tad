@@ -1,0 +1,105 @@
+{
+    "respuesta": [
+      {
+        "numeroEE": "EX-2023-00525807-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "03/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00532444-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "06/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00525735-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "03/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00525749-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "03/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00531666-   -GCABA-MIGRALOYSPROP",
+        "descripcion": "CONTRATO LOCACION DE OBRA",
+        "fechaAlta": "06/10/2023",
+        "nombres": "MALENA FATIMA",
+        "apellidos": "FERRARIS",
+        "tipoDocumento": "DU",
+        "cuit": "27318976169",
+        "email": "malenaferraris@buenosaires.gob.ar",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00531494-   -GCABA-DGIUR",
+        "descripcion": "Fijaci\u00f3n L\u00ednea de Frente Interno",
+        "fechaAlta": "06/10/2023",
+        "nombres": "Silvio Felipe",
+        "apellidos": "Rodriguez",
+        "tipoDocumento": "DU",
+        "cuit": "20111111112",
+        "email": "test@test.com",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00532422-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "06/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00532073-   -GCABA-DGSOCAI",
+        "descripcion": "Ley 104 de Acceso a la Informaci\u00f3n P\u00fablica",
+        "fechaAlta": "06/10/2023",
+        "nombres": "Silvio Felipe",
+        "apellidos": "Rodriguez",
+        "tipoDocumento": "DU",
+        "cuit": "20111111112",
+        "email": "test@test.com",
+        "razonSocial": null
+      },
+      {
+        "numeroEE": "EX-2023-00532135-   -GCABA-DGSOCAI",
+        "descripcion": "Ley 104 de Acceso a la Informaci\u00f3n P\u00fablica",
+        "fechaAlta": "06/10/2023",
+        "nombres": "Silvio Felipe",
+        "apellidos": "Rodriguez",
+        "tipoDocumento": "DU",
+        "cuit": "20111111112",
+        "email": "test@test.com",
+        "razonSocial": null
+      }
+    ],
+    "error": false,
+    "mensaje": null
+  }

@@ -1,0 +1,42 @@
+{
+    "respuesta": [
+      {
+        "numeroEE": "EX-2023-00525807-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "03/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null,
+        "estado" : "Firmar documento"
+      },
+      {
+        "numeroEE": "EX-2023-00532444-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "06/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null,
+        "estado" : "Alta tercero"
+    },
+    {
+        "numeroEE": "EX-2023-00525735-   -GCABA-MSGC",
+        "descripcion": "Registro de Historias Cl\u00ednicas electr\u00f3nicas",
+        "fechaAlta": "03/10/2023",
+        "nombres": "Marcelo Alejandro",
+        "apellidos": "GONZALEZ",
+        "tipoDocumento": "DU",
+        "cuit": "20351221764",
+        "email": "marcelogonzalez@buenosaires.gob.ar",
+        "razonSocial": null,
+        "estado" : "Subsanación"
+      }
+    ],
+    "error": false,
+    "mensaje": null
+  }

@@ -1,0 +1,9 @@
+.sub_header{
+    margin-top: 12px;
+    padding-bottom: 12px;
+}
+
+.container_sub_header{
+    width: 100%;
+    border-bottom: 4px solid #FFDB2E;
+}

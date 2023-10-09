@@ -1,0 +1,18 @@
+.hero{
+    height: 260px;
+    background-color: #e6e6e6;
+}
+
+.container_hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitulo{
+    padding-bottom: 12px;
+}
+
+#titulos{
+  height: 60%;
+}

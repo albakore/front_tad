@@ -1,0 +1,20 @@
+.list_selection{
+    width: 300px !important ;
+    height: 60px;
+    background-color: transparent !important;
+    padding: 0 !important;
+
+}
+
+.list_selection .form-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list_selection .form-group select{
+    width: 80px;
+    margin-left: 15px;
+}
