@@ -1,0 +1,978 @@
+{
+    "respuesta": [
+        {
+            "tag": "CAA",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "RAC",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "REF",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "AVUs",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "bapi",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Agencia de Aprendizaje a lo Largo de la Vida",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General Coordinación del Sistema Integral de Prácticas",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General del Sistema Integral de Prácticas",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Becas",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Minedu",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Beca",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Megc",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Becas Superior",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Profesorado",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Tecnicatura",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Superior",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Formación Docente",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Carrera Docente",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "sscdoc",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Estratégico",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Carreras",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "bapirendiciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Procuración General",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General de Registro de Obras y Catastro",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General de Interpretación Urbanística",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General Desarrollo Gastronómico",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General de Eficiencia Administrativa",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Innovación y Transformación Digital",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Aviso de Obra",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Feria de Mataderos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Mataderos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Reclamo",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Solicitud",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Queja",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Denuncia",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Recurso",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Agencia de Sistemas de Información (ASI)",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "ASI",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Actualizaciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Adopción",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Alimentos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Ambiente",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Consorcios",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Consultas",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Control Fiscal",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Convocatorias",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Cultura",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Defensa Civil",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Defunciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Denuncias",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Descargos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Distritos Económicos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Edictos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Educación",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Permiso de ejecución de obra civil",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Eventos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Fideicomisos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Habilitaciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Impuestos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Infracciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Inscripciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Instituciones Religiosas",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Interpretación Urbanística",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Matrimonios",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Nacimientos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Patrimonio Histórico",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Permisos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Planos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Presentaciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Reclamos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Recursos Humanos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Redeterminación de Precios",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Registro Civil",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Registros",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Renovaciones",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Residuos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Rúbrica",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Salud",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Solicitudes",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Subsidios",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Trabajo",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Tránsito",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Urbanismo",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Transporte",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Vía Pública",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Vivienda",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Agencia Gubernamental de Control (AGC)",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Administración Gubernamental de Ingresos Públicos",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Comisión para la Plena Participación e Inclusión de las Personas con Discapacidad COPIDIS",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Consejo de los Derechos de Niñas, Niños y Adolescentes",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General de Higiene y Seguridad Alimentaria",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General Fiscalización y Control de Obras",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Dirección General Habilitaciones y Permisos",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ente de turismo",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Instituto de la Vivienda de la Ciudad",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Jefatura de Gabinete de Ministros",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Jefe de Gobierno",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Cultura",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Desarrollo Económico y Producción",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Desarrollo Humano y Hábitat",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Educación",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Espacio Publico e Higiene Urbana",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Gobierno",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Hacienda y Finanzas",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Justicia y Seguridad",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Ministerio de Salud",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría Administracion del Sistema de Salud",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Ambiente",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Atención Ciudadana y Gestion Comunal",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Desarrollo Ciudadano",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Desarrollo Urbano",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Gestion Ciudadana y Gestion Comunal",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Justicia y Seguridad",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Medios",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría de Transporte y Obras Públicas",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría Desarrollo Ciudadano",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría General y de Relaciones Internacionales",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría Integración Social para Personas Mayores",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Secretaría Legal y Técnica",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subecretaría de Planificacion de la Movilidad",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Agencia",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Carrera Docente",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Coordinación Pedagógica y Equidad Educativa",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Deportes",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Emergencias",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Gestión Cultural",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Gestión Operativa",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Movilidad",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Paisaje Urbano",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Politicas Culturales y Nuevas Audiencias",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Desarrollo Económico",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Fortalecimiento Personal, Familiar y Comunitario",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Gestión de Recursos Humanos",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Mantenimiento Urbano",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Planificación Sanitaria y Gestión de Red",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Reforma Política y Asuntos Legislativos",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Subsecretaría Trabajo, Industria y Comercio",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Unidad de Coordinación del Plan Estratégico",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Agencia de Protección Ambiental",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Registro de plano de obra civil",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Modificación",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Dirección General Mesa de Entradas, Salidas y Archivo",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Bomberos Voluntarios",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Catálogo Exportador",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Abasto",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Abasto Abierto",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Abasto Barrio Cultural",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Ministerio Publico ",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "Permiso Temprano de ejecución de obra civil",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Permiso de ejecución de micro obra bajo responsabilidad profesional",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Consulta obligatoria",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Permiso de Demolición",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Certificado Urbanístico",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "APRA",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Certificado Aptitud Ambiental",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Barrios Creativos",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Talleres virtuales",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Subsecretaría de Gestión Urbana",
+            "categorias": [
+                "Área"
+            ]
+        },
+        {
+            "tag": "StudyBA",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "InvestBA",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "Residencias",
+            "categorias": [
+                "Categoría"
+            ]
+        },
+        {
+            "tag": "DGRP",
+            "categorias": [
+                "Área"
+            ]
+        }
+    ],
+    "error": false,
+    "mensaje": null
+}

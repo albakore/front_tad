@@ -1,66 +1,104 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ListSelection from "../ListSelection/ListSelection";
-import './style.css'
+import "./style.css";
 
-export default function Paginado() {
+export default function Paginado({
+  itemsPerPage,
+  totalItems,
+  currentPage,
+  setCurrentPage,
+}) {
+  const [activePage, setActivePage] = useState(currentPage);
+  const [pageNumbers, setPageNumbers] = useState([]);
+
+  useEffect(() => {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    // Calculamos los números de página a mostrar
+    let startPage = activePage - 2;
+    let endPage = activePage + 2;
+
+    if (startPage < 1) {
+      startPage = 1;
+      endPage = Math.min(totalPages, 5);
+    }
+
+    if (endPage > totalPages) {
+      endPage = totalPages;
+      startPage = Math.max(1, totalPages - 4);
+    }
+
+    const numbers = Array.from(
+      { length: endPage - startPage + 1 },
+      (_, i) => startPage + i
+    );
+
+    setPageNumbers(numbers);
+  }, [activePage, totalItems, itemsPerPage,currentPage ]);
+
+  const handleClick = (index) => {
+    setActivePage(index);
+    setCurrentPage(index);
+  };
+
   return (
-    <div style={{ marginBottom: "32px" }} className="container d-flex paginado_container">
-      <ListSelection text={"Mostrando 1 de 500"}>
+    <div
+      className="storybook__container-pagination paginado_container"
+      style={{ marginBottom: "32px" }}
+    >
+      <ListSelection text={`Mostrando 1 de ${totalItems}`}>
         <option>5</option>
         <option>10</option>
-        <option>50</option>
+        <option>{totalItems}</option>
       </ListSelection>
-      <div className="storybook__container-pagination">
-        <nav aria-label="Ejemplo de paginado numerado inicial">
-          <ul className="pagination">
-            <li className="page-item" style={{ opacity: "0" }}>
-              <span className="page-link">
-                <span className="page-previous-icon" aria-hidden="true"></span>
-                <span className="page-previous-text"> Anterior</span>
-              </span>
-            </li>
-            <li className="page-item active">
+      <nav aria-label="Ejemplo de paginado numerado central">
+        <ul className="pagination">
+          <li style={{display: currentPage == 1 ? 'none' : 'flex'}} className="page-item ">
+            <a
+              onClick={() => handleClick(activePage - 1)}
+              className="page-link"
+              
+              href="#"
+            >
+              <span className="page-previous-icon" aria-hidden="true"></span>
+              <span className="page-previous-text"> Anterior</span>
+            </a>
+          </li>
+
+          {pageNumbers.map((pageNumber) => (
+            <li
+              onClick={() => handleClick(pageNumber)}
+              className={`page-item ${
+                activePage === pageNumber ? "active" : ""
+              }`}
+              key={pageNumber}
+            >
               <a className="page-link" href="#">
-                1
+                {pageNumber}
               </a>
             </li>
-            <li className="page-item ">
-              <a className="page-link" href="#">
-                2
-              </a>
-            </li>
-            <li className="page-item ">
-              <a className="page-link" href="#">
-                3
-              </a>
-            </li>
-            <li className="page-item ">
-              <a className="page-link" href="#">
-                4
-              </a>
-            </li>
-            <li className="page-item ">
-              <a className="page-link" href="#">
-                5
-              </a>
-            </li>
-            <li className="page-item no-events">
-              <span className="page-link">...</span>
-            </li>
-            <li className="page-item ">
-              <a className="page-link" href="#">
-                10
-              </a>
-            </li>
-            <li className="page-item ">
-              <a className="page-link" href="#">
-                <span className="page-next-text">Siguiente </span>
-                <span className="page-next-icon" aria-hidden="true"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          ))}
+
+          <li className="page-item no-events">
+            <span className="page-link">...</span>
+          </li>
+          <li className="page-item ">
+            <a className="page-link" href="#">
+              {activePage + 9}
+            </a>
+          </li>
+
+          <li className="page-item ">
+            <a
+              onClick={() => handleClick(activePage + 1)}
+              className="page-link"
+              href="#"
+            >
+              <span className="page-next-text">Siguiente </span>
+              <span className="page-next-icon" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
