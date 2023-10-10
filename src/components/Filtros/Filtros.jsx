@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CheckBox from "../CheckBox/CheckBox";
 
 export default function Desplegable({ items }) {
+  const [categoria, setCategoria] = useState([]);
+  const [itemArea, setItemArea] = useState([]);
+  console.log(items.respuesta);
+
+  useEffect(() => {
+    const itemArea = [];
+    const categorias = [];
+    items.respuesta?.forEach((element) => {
+      // Comprueba si el elemento tiene una categoría
+      if (element.categorias.includes("Categoría")) {
+        categorias.push(element.tag);
+      }
+
+      // Comprueba si el elemento tiene un área
+      if (element.categorias.includes("Área")) {
+        itemArea.push(element.tag);
+      }
+    });
+
+    // Actualizar el estado de categoria
+    setCategoria(categorias);
+    setItemArea(itemArea);
+  }, [items]);
 
   return (
     <div className="storybook__container-accordion">
@@ -20,7 +43,15 @@ export default function Desplegable({ items }) {
             data-parent="#accordionExample"
           >
             <div className="card-body">
-              <CheckBox />
+              {categoria.length !== 0 ? (
+                categoria.map((name, index) => (
+                  <div key={index}>
+                    <CheckBox text={name} />
+                  </div>
+                ))
+              ) : (
+                <>Loading</>
+              )}
             </div>
           </div>
         </div>
@@ -38,9 +69,15 @@ export default function Desplegable({ items }) {
             data-parent="#accordionExample"
           >
             <div className="card-body">
-              Esta es la descripción que se encuentra dentro de un colapsable.
-              Recomendamos no utilizar demasiado texto, para generar una lectura
-              óptima.
+            {itemArea.length !== 0 ? (
+                itemArea.map((name, index) => (
+                  <div key={index}>
+                    <CheckBox text={name} />
+                  </div>
+                ))
+              ) : (
+                <>Loading</>
+              )}
             </div>
           </div>
         </div>

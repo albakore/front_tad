@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
 
-export default function CheckBox() {
-    const [check, setCheck] = useState('')
-    const handleClick = () =>{
-        check == '' ? setCheck('true') : setCheck('')
-    }
+export default function CheckBox({text}) {
+  const [check, setCheck] = useState("");
+  const handleClick = () => {
+    check == "" ? setCheck("true") : setCheck("");
+  };
 
-    console.log(check)
   return (
     <div className="custom-control custom-checkbox">
       <input
@@ -20,7 +19,7 @@ export default function CheckBox() {
         checked={check}
       />
       <label className="custom-control-label" for="skills-copywrite-input">
-        Redacción
+        {text}
       </label>
     </div>
   );

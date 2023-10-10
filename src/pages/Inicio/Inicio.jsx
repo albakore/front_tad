@@ -45,7 +45,6 @@ export default function Inicio() {
     data.respuesta?.slice(indexOfFirstItem, indexOfLastItem) || [];
 
   //configuracion para los desplegables:
-  const items = filtros.respuesta
 
   return (
     <div>
@@ -55,7 +54,7 @@ export default function Inicio() {
         <div className="row">
           <div className="col-md-3">
             <h2 style={{ marginBottom: "24px" }}>Filtrar por</h2>
-            <Filtros items={items} />
+            <Filtros items={filtros} />
           </div>
           <div className="col-md-9">
             {currentItems.map((item, index) => (

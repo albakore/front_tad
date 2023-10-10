@@ -1,15 +1,25 @@
 import React from "react";
+import State from "../State/State";
 
-export default function CardTramite({data}) {
+export default function CardTramite({ data }) {
+  const tags = data.etiquetas.tags;
+  console.log(typeof tags);
   return (
     <a className="card" href="#">
       <div className="card-body">
-        <h4 className="card-title">{data.nombre}</h4>
-        <p className="card-text">
-          Recomendamos en este espacio no utilizar más de 3 líneas, para generar
-          una lectura óptima. En este caso agregamos líneas de texto extras y
-          mostrar el comportamiento de la card.
+        <p className="card-text row">
+          {tags.map((tag, index) => {
+            return (
+              <div className="" key={index}>
+                <State text={tag} />
+              </div>
+            );
+          })}
         </p>
+        <h4 className="card-title">{data.nombre}</h4>
+        <span>
+          {data.descripcion}
+        </span>
       </div>
     </a>
   );
