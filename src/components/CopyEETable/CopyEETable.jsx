@@ -1,24 +1,11 @@
 import React from "react";
 import ModalReconocimiento from "../ModalReconocimiento/ModalReconocimiento";
-import { useState } from "react";
 
 export default function CopyEETable({ text }) {
-  const [show, setShow] = useState("");
 
   const handleClick = () => {
-    // Crear un elemento de textarea temporal para copiar el texto
-    const textarea = document.createElement("textarea");
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
 
-    // Copiar el texto al portapapeles
-    document.execCommand("copy");
-
-    // Eliminar el elemento de textarea temporal
-    document.body.removeChild(textarea);
-
-    // Puedes mostrar una notificación o realizar alguna otra acción después de copiar el texto
+    navigator.clipboard.writeText(text)
     return <ModalReconocimiento />;
   };
 
