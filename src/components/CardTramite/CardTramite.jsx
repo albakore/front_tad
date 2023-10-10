@@ -1,5 +1,6 @@
 import React from "react";
 import State from "../State/State";
+import './style.css'
 
 export default function CardTramite({ data }) {
   const tags = data.etiquetas.tags;
@@ -10,7 +11,7 @@ export default function CardTramite({ data }) {
         <p className="card-text row">
           {tags.map((tag, index) => {
             return (
-              <div className="" key={index}>
+              <div className="tags" key={index}>
                 <State text={tag} />
               </div>
             );
